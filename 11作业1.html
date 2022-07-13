@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>首页上部分</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .fl {
+            float: left;
+        }
+
+        .fr {
+            float: right;
+        }
+
+        .clear {
+            clear: both;
+        }
+
+        .header {
+            width: 1200px;
+            /* TODO: 去掉高度为什么不行， header 的高度会改变 */
+            height: 72px;
+            margin: 0 auto;
+            font: 18px "微软雅黑";
+            color: #3c3d46;
+        }
+
+        .logo {
+
+            margin: 7px 3px 6px 0;
+
+        }
+
+        .brand {
+            /* margin-top: 17px;
+            margin-bottom: 16px;
+            margin-right: 164px; */
+            /* margin: 17px 164px 16px 0; */
+            margin: 16px 164px 16px 0;
+
+        }
+
+        li {
+            list-style-type: none;
+        }
+
+        .nav li {
+            width: 80px;
+            height: 72px;
+            line-height: 72px;
+            text-align: center;
+            margin-right: 24px;
+        }
+
+        .first {
+            background-color: #5696ff;
+            color: #fefeff;
+
+        }
+
+        .log_reg {
+            line-height: 72px;
+        }
+
+        .log_reg .segment {
+            margin: 0 10px;
+        }
+
+
+
+
+        .body {
+            height: 594px;
+            background: url(img/banner.jpg) no-repeat center;
+            position: relative;
+        }
+
+        .points {
+            position: absolute;
+            left: 50%;
+            bottom: 29px;
+            margin-left: -26px;
+        }
+
+        .point1 {
+            width: 16px;
+            height: 16px;
+            border-radius: 8px;
+            background-color: #fcfcfd;
+            margin-right: 19px;
+        }
+
+        .point2 {
+            width: 16px;
+            height: 16px;
+            border-radius: 8px;
+            border: 2px solid #fcfcfd;
+        }
+
+
+        .search {
+            width: 350px;
+            margin: 0 auto;
+            margin-top: 100px;
+        }
+
+        .search input {
+            width: 350px;
+            height: 40px;
+            font-size: 16px;
+            color: #999999;
+            border-radius: 5px;
+            border-width: 1px;
+        }
+
+
+        .footer {
+            width: 328px;
+            height: 81px;
+            margin: 0 auto;
+            margin-top: 87px;
+        }
+
+        .footer .segment {
+            width: 79px;
+            height: 6px;
+            background-color: #3c3d46;
+            /* margin: 15px 14px; */
+            margin-top: 15px;
+        }
+
+        .footer .space {
+            margin-right: 14px;
+        }
+
+        .footer .fl p {
+            font-size: 36px;
+            font-family: "微软雅黑";
+            color: #5696ff;
+            line-height: 36px;
+            margin-bottom: 22px;
+        }
+
+        .footer p {
+            font-size: 22px;
+            font-family: "微软雅黑";
+            color: #666666;
+            text-align: center;
+        }
+
+        .pic_list {
+            width: 1202px;
+            height: 371px;
+            margin: 0 auto;
+            margin-top: 55px;
+        }
+
+        .pic {
+            width: 118px;
+            height: 372px;
+            margin-right: 3px;
+        }
+
+        .denmark {
+            width: 594px;
+            background: url(img/denmark.jpg);
+        }
+
+        .sichuan {
+            background: url(img/sichuan.jpg);
+        }
+
+        .dali {
+            background: url(img/dali.jpg);
+        }
+
+        .japan {
+            background: url(img/japan.jpg);
+        }
+
+        .italy {
+            background: url(img/italy.jpg);
+        }
+
+        .france {
+            background: url(img/france.jpg);
+        }
+
+        .pic div{
+            width: 118px;
+            height: 372px;
+            background-color: rgba(51, 51, 51, 0.5);
+            
+        }
+
+        .denmark div{
+            width: 594px;
+            height: 372px;
+            background-color: rgba(51, 51, 51, 0.5);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrap">
+        <!-- logo 以及导航栏 -->
+        <div class="header">
+            <div class="symbol fl">
+                <!-- 内联元素 img 具有宽高属性，margin 会起到作用； span 元素的 margin 在上下方向上不会起作用 -->
+                <img src="img/logo.png" alt="logo" class="logo">
+                <img src="img/brand.png" alt="brand" class="brand">
+            </div>
+            <ul class="nav fl">
+                <li class="first fl">
+                    <p>首页</p>
+                </li>
+                <li class="fl">
+                    <p>地区</p>
+                </li>
+                <li class="fl">
+                    <p>特惠</p>
+                </li>
+                <li class="fl">
+                    <p>资讯</p>
+                </li>
+                <li class="fl">
+                    <p>游记</p>
+                </li>
+                <div class="clear"></div>
+            </ul>
+            <div class="log_reg fr">
+                <span>登录</span><span class="segment">|</span><span>注册</span>
+            </div>
+            <div class="clear"></div>
+        </div>
+        <!-- 轮播图 -->
+        <div class="body">
+            <div class="points">
+                <div class="point1 fl"></div>
+                <div class="point2 fl"></div>
+                <div class="clear"></div>
+            </div>
+        </div>
+
+        <!-- 搜索框 -->
+        <div class="search">
+            <input type="text" placeholder="开启你的旅程吧！">
+            <!-- <img src="img/search.png" alt="search"> -->
+        </div>
+
+        <!-- 地区旅旅部分 -->
+        <div class="footer">
+            <div>
+                <div class="segment space fl"></div>
+                <div class="fl">
+                    <p>地区旅游</p>
+                </div>
+                <div class="segment fr"></div>
+                <div class="clear"></div>
+            </div>
+            <div>
+                <p>从这里开始有意思的地方文化</p>
+            </div>
+
+        </div>
+
+        <div class="pic_list">
+            <div class="pic sichuan fl"><div></div></div>
+            <div class="pic dali fl"><div></div></div>
+            <div class="pic denmark fl"><div></div></div>
+            <div class="pic japan fl"><div></div></div>
+            <div class="pic italy fl"><div></div></div>
+            <div class="pic france fr"><div></div></div>
+            <div class="clear"></div>
+        </div>
+
+    </div>
+</body>
+
+</html>
